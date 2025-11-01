@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor-Patient Live Chat</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script src="/static/app.js" defer></script>
+  <link rel="icon" href="/static/favicon.ico" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="input-group">
+        <label for="role">Role</label>
+        <select id="role">
+          <option value="doctor">Doctor</option>
+          <option value="patient">Patient</option>
+        </select>
+      </div>
+      <div class="buttons">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn" disabled>Stop</button>
+        <div class="input-group">
+          <label><input type="checkbox" id="playback" checked> Enable Voice Playback</label>
+        </div>
+
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Live Conversation</h3>
+      <div class="conversation-box" id="chatBox">
+        <p class="system">No conversation yet...</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
